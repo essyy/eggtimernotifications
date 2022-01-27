@@ -1,4 +1,4 @@
-package com.example.android.eggtimernotifications.receiver
+package com.example.android.notifications.receiver
 
 import android.app.AlarmManager
 import android.app.NotificationManager
@@ -10,6 +10,7 @@ import android.os.SystemClock
 import android.text.format.DateUtils
 import androidx.core.app.AlarmManagerCompat
 import androidx.core.content.ContextCompat
+
 class SnoozeReceiver : BroadcastReceiver() {
     private val REQUEST_CODE = 0
 

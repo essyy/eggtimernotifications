@@ -1,4 +1,5 @@
-package com.example.android.eggtimernotifications.ui
+package com.example.android.notifications.ui
+
 import android.app.*
 import android.content.Context
 import android.content.Intent
@@ -7,12 +8,12 @@ import android.os.SystemClock
 import androidx.core.app.AlarmManagerCompat
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.*
-import com.example.android.eggtimernotifications.receiver.AlarmReceiver
-import com.example.android.eggtimernotifications.R
-import com.example.android.eggtimernotifications.util.cancelNotifications
-import com.example.android.eggtimernotifications.util.sendNotification
+import com.example.android.notifications.receiver.AlarmReceiver
+import com.example.android.notifications.R
+import com.example.android.notifications.util.cancelNotifications
 import kotlinx.coroutines.*
-class EggTimerViewModel (private val app: Application) : AndroidViewModel(app) {
+
+class EggTimerViewModel(private val app: Application) : AndroidViewModel(app) {
 
     private val REQUEST_CODE = 0
     private val TRIGGER_TIME = "TRIGGER_AT"
@@ -97,7 +98,7 @@ class EggTimerViewModel (private val app: Application) : AndroidViewModel(app) {
                 _alarmOn.value = true
                 val selectedInterval = when (timerLengthSelection) {
                     0 -> second * 10 //For testing only
-                    else ->timerLengthOptions[timerLengthSelection] * minute
+                    else -> timerLengthOptions[timerLengthSelection] * minute
                 }
                 val triggerTime = SystemClock.elapsedRealtime() + selectedInterval
 

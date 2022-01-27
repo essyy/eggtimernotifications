@@ -1,12 +1,13 @@
-package com.example.android.eggtimernotifications.receiver
+package com.example.android.notifications.receiver
+
 import android.app.NotificationManager
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
-import android.widget.Toast
 import androidx.core.content.ContextCompat
-import com.example.android.eggtimernotifications.R
-import com.example.android.eggtimernotifications.util.sendNotification
+import com.example.android.notifications.R
+import com.example.android.notifications.util.sendNotification
+
 class AlarmReceiver : BroadcastReceiver() {
 
     override fun onReceive(context: Context, intent: Intent) {

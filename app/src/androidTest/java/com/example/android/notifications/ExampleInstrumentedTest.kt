@@ -1,4 +1,4 @@
-package com.example.android.eggtimernotifications
+package com.example.android.notifications
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

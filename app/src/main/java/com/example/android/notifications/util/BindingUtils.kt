@@ -1,4 +1,5 @@
-package com.example.android.eggtimernotifications.util
+package com.example.android.notifications.util
+
 import android.text.format.DateUtils
 import android.widget.TextView
 import androidx.databinding.BindingAdapter

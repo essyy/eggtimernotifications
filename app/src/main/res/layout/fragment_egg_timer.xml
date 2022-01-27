@@ -7,7 +7,7 @@
 
         <variable
             name="eggTimerViewModel"
-            type="com.example.android.eggtimernotifications.ui.EggTimerViewModel" />
+            type="com.example.android.notifications.ui.EggTimerViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

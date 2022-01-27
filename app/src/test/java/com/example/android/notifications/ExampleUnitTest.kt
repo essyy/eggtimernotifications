@@ -1,4 +1,4 @@
-package com.example.android.eggtimernotifications
+package com.example.android.notifications
 
 import org.junit.Test
 
